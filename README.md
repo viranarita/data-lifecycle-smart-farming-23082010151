@@ -1,7 +1,3 @@
-Ini dia file `README.md` yang sudah diperbaiki bagian *bash code blocks* dan format keseluruhannya agar terlihat profesional di GitHub. Kamu tinggal salin teks di dalam kotak di bawah ini:
-
----
-
 ```markdown
 # 🌿 Data Lifecycle Smart Farming Dashboard
 
@@ -11,9 +7,9 @@ Proyek ini adalah implementasi siklus hidup data (*Data Lifecycle*) terpadu untu
 
 Sebelum divisualisasikan, dataset yang berisi 500 observasi sensor telah melalui tahap evaluasi kualitas data yang ketat:
 
-* **Accuracy Score**: **97.45%** (Dihitung dengan rumus $1 - (\text{missing}/\text{total})$) [cite: 81-82, 85, 96].
-* **Completeness Score**: **97.45%** (Dihitung dengan rumus $\text{non-null}/\text{total}$, tidak ada *missing values* pada kolom metrik utama).
-* **Timeliness Score**: **1.40%** (Persentase data yang tercatat dalam 30 hari terakhir dari total dataset).
+* **Accuracy Score**: **97.45%** 
+* **Completeness Score**: **97.45%** 
+* **Timeliness Score**: **1.40%** 
 
 **Insight Temuan Utama:**
 * Rata-rata **Kelembapan Tanah** berada di **26.75%** (kering namun masih di atas batas kritis).
