@@ -1,5 +1,5 @@
-```markdown
-# 🌿 Data Lifecycle Smart Farming Dashboard
+
+# 🌿 Data Lifecycle Smart Farming Dashboard 🌿
 
 Proyek ini adalah implementasi siklus hidup data (*Data Lifecycle*) terpadu untuk sistem pertanian cerdas (*Smart Farming*). Repositori ini mencakup seluruh tahapan mulai dari ekstraksi data mentah via Kaggle API, pembersihan data (*data cleaning* & penanganan *outliers*), hingga penyajian wawasan melalui *dashboard* interaktif yang memantau kondisi lahan secara *real-time*.
 
@@ -12,8 +12,8 @@ Sebelum divisualisasikan, dataset yang berisi 500 observasi sensor telah melalui
 * **Timeliness Score**: **1.40%** 
 
 **Insight Temuan Utama:**
-* Rata-rata **Kelembapan Tanah** berada di **26.75%** (kering namun masih di atas batas kritis).
-* Rata-rata **pH Tanah** berada di **6.52** (tingkat keasaman yang sangat optimal untuk hasil panen).
+* Rata-rata **Kelembapan Tanah** berada di **29.5%** (↓ 11.9%), yang menunjukkan perlunya pemantauan irigasi lebih lanjut.
+* Rata-rata **Kesehatan Tanaman** berada di **0.62** (↓ 0.05) yang perlu diwaspadai agar tidak jatuh ke bawah ambang batas 0.3.
 
 ## ✨ Fitur Utama Dashboard
 
@@ -41,8 +41,9 @@ Proyek ini disusun dengan standar arsitektur direktori analitik sebagai berikut:
 │   ├── cleaned_data.csv                     
 │   ├── analysis_report.pdf                 
 │   └── dashboard_screenshot.png            
-├── Data_Lifecycle_Smart_Farming.ipynb                   
-└── README.md
+├── Data_Lifecycle_Smart_Farming.ipynb
+├── README.md
+└── requirements.txt
 
 ```
 
@@ -63,6 +64,7 @@ pip install -r requirements.txt
 ```
 
 *(Library utama: pandas, streamlit, plotly, matplotlib, seaborn, kagglehub)*
+
 3. **Jalankan Dashboard Streamlit:**
 > ⚠️ **Penting:** Pastikan Anda mengeksekusi perintah ini langsung dari folder utama proyek (*root directory*), bukan dari dalam folder dashboard.
 
