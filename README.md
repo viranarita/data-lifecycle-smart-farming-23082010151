@@ -11,8 +11,8 @@ Proyek ini adalah implementasi siklus hidup data (*Data Lifecycle*) terpadu untu
 
 Sebelum divisualisasikan, dataset yang berisi 500 observasi sensor telah melalui tahap evaluasi kualitas data yang ketat:
 
-* **Accuracy Score**: **100%** (Dihitung dengan rumus $1 - (\text{missing}/\text{total})$) [cite: 81-82, 85, 96].
-* **Completeness Score**: **100%** (Dihitung dengan rumus $\text{non-null}/\text{total}$, tidak ada *missing values* pada kolom metrik utama).
+* **Accuracy Score**: **97.45%** (Dihitung dengan rumus $1 - (\text{missing}/\text{total})$) [cite: 81-82, 85, 96].
+* **Completeness Score**: **97.45%** (Dihitung dengan rumus $\text{non-null}/\text{total}$, tidak ada *missing values* pada kolom metrik utama).
 * **Timeliness Score**: **1.40%** (Persentase data yang tercatat dalam 30 hari terakhir dari total dataset).
 
 **Insight Temuan Utama:**
