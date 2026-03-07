@@ -155,7 +155,7 @@ with col_alert1:
     
     st.markdown(f"""
         <div style="background-color: {bg_m}; border-radius: 15px; padding: 25px; text-align: center; color: white; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-            <div style="font-size: 28px; font-weight: 700; opacity: 1;">Kelembapan Tanah Rata-rata</div>
+            <div style="font-size: 28px; font-weight: 700; opacity: 1;">Kelembaban Tanah Rata-rata</div>
             <div style="font-size: 50px; font-weight: 800; margin: 10px 0;">
                 {current_moisture:.1f}% 
                 <span style="font-size: 22px; opacity: 0.8; font-weight: 400;">({m_symbol} {abs(moisture_delta):.1f}%)</span>
@@ -259,17 +259,22 @@ if not df_resampled.empty:
     beautify_line_chart(fig_hum, "Humidity (%)")
     beautify_line_chart(fig_ph, "Soil pH")
 
-    with st.container(border=True):
-        st.plotly_chart(fig_temp, use_container_width=True)
+    col_chart1, col_chart2 = st.columns(2)
 
-    with st.container(border=True):
-        st.plotly_chart(fig_moist, use_container_width=True)
+    with col_chart1:
+        with st.container(border=True):
+            st.plotly_chart(fig_temp, use_container_width=True)
+            
+        with st.container(border=True):
+            st.plotly_chart(fig_hum, use_container_width=True)
 
-    with st.container(border=True):
-        st.plotly_chart(fig_hum, use_container_width=True)
+    with col_chart2:
+        with st.container(border=True):
+            st.plotly_chart(fig_moist, use_container_width=True)
+            
+        with st.container(border=True):
+            st.plotly_chart(fig_ph, use_container_width=True)
 
-    with st.container(border=True):
-        st.plotly_chart(fig_ph, use_container_width=True)
 else:
     st.warning("Tidak ada data pada rentang waktu ini.")
 

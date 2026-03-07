@@ -12,8 +12,13 @@ Sebelum divisualisasikan, dataset yang berisi 500 observasi sensor telah melalui
 * **Timeliness Score**: **1.40%** 
 
 **Insight Temuan Utama:**
-* Rata-rata **Kelembapan Tanah** berada di **29.5%** (↓ 11.9%), yang menunjukkan perlunya pemantauan irigasi lebih lanjut.
-* Rata-rata **Kesehatan Tanaman** berada di **0.62** (↓ 0.05) yang perlu diwaspadai agar tidak jatuh ke bawah ambang batas 0.3.
+* **Kondisi Lahan**: Lahan secara keseluruhan berada dalam status sehat.
+* **Suhu**: Suhu rata-rata berada di kisaran **25°C**, ideal untuk pertumbuhan tanaman.
+* **Kelembaban Tanah**: Kelembaban tanah rata-rata berada di kisaran **45%**, menunjukkan kondisi tanah yang cukup lembab.
+* **Kelembaban Udara**: Kelembaban udara rata-rata berada di kisaran **60%**, menunjukkan kondisi udara yang cukup lembab.
+* **pH Tanah**: pH tanah rata-rata berada di kisaran **6.5**, menunjukkan kondisi tanah yang relatif stabil.
+* **NDVI**: NDVI rata-rata berada di kisaran **0.75**, menunjukkan kesehatan tanaman yang baik.
+* **Hasil Panen**: Hasil panen rata-rata berada di kisaran **5000 kg/hektar**, menunjukkan hasil panen yang baik.
 
 ## ✨ Fitur Utama Dashboard
 
